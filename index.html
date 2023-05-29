@@ -31,6 +31,7 @@
           <a class="header-logo link" href="./index.html"
             >Web<span class="studio">Studio</span></a
           >
+
           <ul class="header-nav-list list">
             <li class="header-nav-item">
               <a class="header-nav-link link active" href="./index.html"
@@ -47,6 +48,15 @@
             </li>
           </ul>
         </nav>
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="hamburger" width="32" height="22">
+            <use href="./images/icons.svg#hamburger"></use>
+          </svg>
+        </button>
         <address class="header-adress">
           <ul class="header-adress-list list">
             <li class="header-adress-item">
@@ -86,7 +96,7 @@
                   <use href="./images/icons.svg#antenna"></use>
                 </svg>
               </div>
-              <h3 class="title stategy">Strategy</h3>
+              <h3 class="title_strategy">Strategy</h3>
               <p class="subtitle">
                 Our goal is to identify the business problem to walk away with
                 the perfect and creative solution.
@@ -98,7 +108,7 @@
                   <use href="./images/icons.svg#clock"></use>
                 </svg>
               </div>
-              <h3 class="title stategy">Punctuality</h3>
+              <h3 class="title_strategy">Punctuality</h3>
               <p class="subtitle">
                 Bring the key message to the brand's audience for the best price
                 within the shortest possible time.
@@ -110,7 +120,7 @@
                   <use href="./images/icons.svg#diagram"></use>
                 </svg>
               </div>
-              <h3 class="title stategy">Diligence</h3>
+              <h3 class="title_strategy">Diligence</h3>
               <p class="subtitle">
                 Research and confirm brands that present the strongest digital
                 growth opportunities and minimize risk.
@@ -122,7 +132,7 @@
                   <use href="./images/icons.svg#astronaut"></use>
                 </svg>
               </div>
-              <h3 class="title stategy">Technologies</h3>
+              <h3 class="title_strategy">Technologies</h3>
               <p class="subtitle">
                 Design practice focused on digital experiences. We bring forth a
                 deep passion for problem-solving.
@@ -139,6 +149,10 @@
             <li class="doing-item">
               <img
                 class="doing-img"
+                srcset="
+                  ./images/we-doing/img-1.jpg    1x,
+                  ./images/we-doing/img-1@2x.jpg 2x
+                "
                 src="./images/we-doing/img-1.jpg"
                 alt="Computer"
                 width="360"
@@ -148,6 +162,10 @@
             <li class="doing-item">
               <img
                 class="doing-img"
+                srcset="
+                  ./images/we-doing/img-2.jpg    1x,
+                  ./images/we-doing/img-2@2x.jpg 2x
+                "
                 src="./images/we-doing/img-2.jpg"
                 alt="Tabs"
                 width="360"
@@ -157,6 +175,10 @@
             <li class="doing-item">
               <img
                 class="doing-img"
+                srcset="
+                  ./images/we-doing/img-3.jpg    1x,
+                  ./images/we-doing/img-3@2x.jpg 2x
+                "
                 src="./images/we-doing/img-3.jpg"
                 alt="Application"
                 width="360"
@@ -174,6 +196,10 @@
             <li class="team-item">
               <img
                 class="team-img"
+                srcset="
+                  ./images/our-team/img-4.jpg    1x,
+                  ./images/our-team/img-4@2x.jpg 2x
+                "
                 src="./images/our-team/img-4.jpg"
                 alt="Product Designer Mark Guerrero"
               />
@@ -239,6 +265,10 @@
             <li class="team-item">
               <img
                 class="team-img"
+                srcset="
+                  ./images/our-team/img-5.jpg    1x,
+                  ./images/our-team/img-5@2x.jpg 2x
+                "
                 src="./images/our-team/img-5.jpg"
                 alt="Frontend Developer Tom Ford"
               />
@@ -304,6 +334,10 @@
             <li class="team-item">
               <img
                 class="team-img"
+                srcset="
+                  ./images/our-team/img-6.jpg    1x,
+                  ./images/our-team/img-6@2x.jpg 2x
+                "
                 src="./images/our-team/img-6.jpg"
                 alt="Marketing Camila Garcia"
               />
@@ -369,6 +403,10 @@
             <li class="team-item">
               <img
                 class="team-img"
+                srcset="
+                  ./images/our-team/img-7.jpg    1x,
+                  ./images/our-team/img-7@2x.jpg 2x
+                "
                 src="./images/our-team/img-7.jpg"
                 alt="UI Designer Daniel Wilson"
               />
@@ -534,7 +572,7 @@
           </p>
         </div>
         <div class="footer_two">
-          <p class="media">Social media</p>
+          <p class="social_media media">Social media</p>
           <ul class="footer-media list">
             <li class="footer-media-item">
               <a
@@ -692,6 +730,102 @@
         </button>
       </div>
     </div>
+    <!--Mobile menu-->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="modal-close-icon" width="8" height="8">
+          <use href="./images/icons.svg#close-icon"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu list">
+        <li class="mobile-menu-link">
+          <a class="mobile link" href="./index.html">Studio</a>
+        </li>
+        <li class="mobile-menu-link">
+          <a class="mobile link" href="./portfolio.html">Portfolio</a>
+        </li>
+        <li class="mobile-menu-link">
+          <a class="mobile link" href="">Contacts</a>
+        </li>
+      </ul>
+
+      <ul class="mobile-contacts list">
+        <li class="mobile-contacts-item">
+          <a class="mobile-telefon link" href="tel:+110001111111"
+            >+11 (000) 111-11-11</a
+          >
+        </li>
+        <li class="mobile-contacts-item">
+          <a class="mobile-mail link" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+
+      <ul class="mobile-socials list">
+        <li class="team-media-item">
+          <a
+            class="team-media-link link"
+            href=""
+            target="_blank"
+            rel="noopener no-referrer"
+            aria-label="Instagram icon"
+          >
+            <svg class="team-icons" width="16" height="16">
+              <use href="./images/icons.svg#instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="team-media-item">
+          <a
+            class="team-media-link link"
+            href=""
+            target="_blank"
+            rel="noopener no-referrer"
+            aria-label="Twitter icon"
+          >
+            <svg class="team-icons" width="16" height="16">
+              <use href="./images/icons.svg#twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="team-media-item">
+          <a
+            class="team-media-link link"
+            href=""
+            target="_blank"
+            rel="noopener no-referrer"
+            aria-label="Facebook icon"
+          >
+            <svg class="team-icons" width="16" height="16">
+              <use href="./images/icons.svg#facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="team-media-item">
+          <a
+            class="team-media-link link"
+            href=""
+            target="_blank"
+            rel="noopener no-referrer"
+            aria-label="Linkedin icon"
+          >
+            <svg class="team-icons" width="16" height="16">
+              <use href="./images/icons.svg#linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
     <script src="./js/modal.js"></script>
+    <!--Mobile menu scripts-->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
